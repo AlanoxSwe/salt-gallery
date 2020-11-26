@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root { --time: 0.707s; }
+
+$padding-img: 1rem;
+$primary-color: #2B2B2B;
+$white: #fff;
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+
+@mixin flexbox ($align, $justify, $width) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    width: $width;
+  }
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    // background-color:#141019;
+    // background: radial-gradient(at 50% -20%, #908392, #0d060e) fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav.buttons {
+    @include flexbox(center, space-around, 100%);
+}
+
+.buttons button,
+nav input[type="submit"] {
+    font-family: 'Work Sans', sans-serif;
+    background: $primary-color;
+    color: $white;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-left: 1rem;
+    transition: background-color 0.8s;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.buttons button:hover, 
+nav input[type="submit"]:hover {
+   background: #6f2da8;
+}

@@ -1,0 +1,48 @@
+.about {
+    background-color: #eee;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-size: 2rem;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+
+    .about-split {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        img {
+            margin: 2rem;
+            border-radius: 10px;
+            max-width: 400px;
+            height: auto;
+        }
+
+        p {
+            margin: 2rem;
+            max-width: 600px;
+        }
+
+        .about-paragraph {
+            display: inline-block;
+            margin: 1rem 0;
+        }
+    }
+
+    hr {
+        width: 40%;
+        margin: 3rem auto;
+    }
+
+    .about-footer {
+        text-align: center;
+    }
+}

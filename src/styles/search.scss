@@ -1,0 +1,22 @@
+@import './index.scss';
+
+nav {
+    @include flexbox(center, center, 100%);
+    margin: 4rem 0;
+}
+
+nav input[type="text"] {
+    background: $white;
+    border: $white;
+    border-bottom: 1px solid;
+    border-radius: 2px;
+    height: 22px;
+    width: 100px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 300px;
+    outline: none;
+  }
